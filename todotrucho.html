@@ -1,0 +1,234 @@
+<!-- 
+  ======================================================
+    NOTAS DE DESARROLLADOR - CÓDIGOS PREMIUM
+  ======================================================
+  - Essential: todotruchoesential
+  - Gold:      todotruchogold
+  - Diamond:   todotruchodiamond
+  ======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡¡¡TODOTRUCHO ONLINE - CINE Y TELEVISION HD!!!</title>
+    <link rel="icon" href="5537953.ico">
+    <link rel="stylesheet" href="todotrucho.css">
+    <script src="todotrucho.js" defer></script>
+</head>
+<body>
+
+<!-- Contenedor para la Lluvia de Pochoclos -->
+<div id="popcornContainer"></div>
+
+<!-- Cartel Marquee promocional de bienvenida -->
+<div class="marquee-top">
+    <marquee scrollamount="12">
+        🔥 ¡BIENVENIDO A TODOTRUCHO CINE ONLINE! 🔥 LA MEJOR PLATAFORMA DE STREAMING 100% GRATIS 🔥 VERIFICADO LIBRE DE VIRUS 🔥 AGREGANOS A FAVORITOS (CTRL+D) 🔥
+    </marquee>
+</div>
+
+<!-- ================= BANNER LATERAL IZQUIERDO ================= -->
+<aside class="side-ad left-ad">
+    <div class="ad-box">
+        <div class="ad-title">⚠️ ATENCION USUARIO</div>
+        <p>¡Tu computadora puede estar en RIESGO!</p>
+        <div class="ad-img">🧹</div>
+        <a href="#" class="ad-btn" onclick="alert('¡Escaneo completo! Tu sistema esta 100% protegido por TodoTrucho Security.'); return false;">DESCARGAR ANTIVIRUS GRATIS</a>
+    </div>
+    <div class="ad-box blink-ad">
+        <div class="ad-title">💰 ¡GANASTE! 💰</div>
+        <p>¡Sos el visitante Nº 1.000.000!</p>
+        <p class="ad-prize">🎁 GANASTE UN AUTO 0KM</p>
+        <a href="#" class="ad-btn gold-btn" onclick="alert('¡Reclamo procesado! En breve te contactaremos.'); return false;">CLIK AKA PARA RECLAMAR</a>
+    </div>
+</aside>
+
+<!-- ================= BANNER LATERAL DERECHO ================= -->
+<aside class="side-ad right-ad">
+    <div class="ad-box">
+        <div class="ad-title">📱 CASINO ONLINE 365</div>
+        <p>Cargá $1000 y jugá con $10.000 de regalo</p>
+        <div class="ad-img">🎰</div>
+        <a href="#" class="ad-btn" onclick="alert('¡Bono acreditado en tu cuenta ficticia!'); return false;">JUGAR AHORA YA</a>
+    </div>
+    <div class="ad-box pulse-ad">
+        <div class="ad-title">⚡ INTERNET 5G ULTRA</div>
+        <p>Aumentá tu velocidad de bajada un 500% gratis</p>
+        <div class="ad-img">🚀</div>
+        <a href="#" class="ad-btn green-btn" onclick="alert('Optimizando conexion dial-up...'); return false;">ACELERAR INTERNET</a>
+    </div>
+</aside>
+
+<!-- ================= CONTENIDO PRINCIPAL ================= -->
+<div class="page-layout">
+    <header id="mainHeader">
+        <!-- Cartel del Plan arriba de todo -->
+        <div id="userPlanBadge" class="plan-badge" style="display: none;"></div>
+
+        <div class="top-nav">
+            <a href="#peliculas">🎬 PELIS HD</a>
+            <a href="#tv">📺 TV EN VIVO</a>
+            <button id="togglePopcornBtn" class="nav-btn-popcorn" disabled title="Requiere Plan Gold o Diamond">🍿 Pochoclos (Solo Gold/Diamond)</button>
+            <button id="openPremiumBtn" class="nav-btn-premium">💎 SER MIEMBRO VIP ORO/DIAMANTE</button>
+        </div>
+        
+        <h1 class="logo">
+            <span class="fire-text">⚡ TODOTRUCHO ⚡</span>
+            <span class="sub-logo">www.todo-trucho-oficial-cine-hd.com.ar</span>
+        </h1>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <p class="blink-text">>>> EL PORTAL DE ENTRETENIMIENTO MAS POTENTE DE LA WEB <<<</p>
+
+            <!-- Buscador con botón de Lupa -->
+            <div class="search-box-container">
+                <input type="text" id="searchInput" placeholder="Ingresá el título de la película o serie...">
+                <button id="searchBtn" title="Buscar">🔍 BUSCAR EN SERVIDOR</button>
+            </div>
+            <div id="loadingMsg">⌛ CONECTANDO CON SERVIDOR DE ALTA VELOCIDAD...</div>
+        </section>
+
+        <section id="peliculas" class="content-section">
+            <div class="section-title-container">
+                <h2>🔥 Películas Más Vistas (Cartelera Oficial):</h2>
+                <div class="random-controls">
+                    <button id="randomMovieBtn" class="btn-random" title="Elegir película al azar">🎲 MODO AZAR</button>
+                    <button id="resetMoviesBtn" class="btn-reset" title="Restablecer lista" style="display: none;">🔄 RESTABLECER</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <article class="card">
+                    <span class="card-badge">ESTRENO</span>
+                    <h3>Un cuento chino</h3>
+                    <a href="https://www.justwatch.com/es/pelicula/un-cuento-chino" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">4K ULTRA</span>
+                    <h3>Titanic</h3>
+                    <a href="https://www.justwatch.com/mx/pelicula/titanic-1997" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">1080p</span>
+                    <h3>El secreto de sus ojos</h3>
+                    <a href="https://www.justwatch.com/ar/pelicula/el-secreto-de-sus-ojos" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">FULL HD</span>
+                    <h3>Nueve reinas</h3>
+                    <a href="https://www.justwatch.com/ar/pelicula/nueve-reinas" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">DIGITAL</span>
+                    <h3>Relatos salvajes</h3>
+                    <a href="https://www.justwatch.com/ar/pelicula/relatos-salvajes" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">CLASICO</span>
+                    <h3>Esperando la carroza</h3>
+                    <a href="https://www.justwatch.com/mx/pelicula/esperando-la-carroza" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">AUDIO ARG</span>
+                    <h3>Argentina, 1985</h3>
+                    <a href="https://www.justwatch.com/ar/pelicula/argentina-1985" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">REMASTER</span>
+                    <h3>La historia oficial</h3>
+                    <a href="https://www.justwatch.com/mx/pelicula/la-historia-oficial" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">MAX QUALITY</span>
+                    <h3>El ángel</h3>
+                    <a href="https://www.justwatch.com/es/pelicula/el-angel-2018" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-badge">1-CLICK</span>
+                    <h3>La odisea de los giles</h3>
+                    <a href="https://www.justwatch.com/es/pelicula/la-odisea-de-los-giles" target="_blank" rel="noopener">▶ REPRODUCIR HD</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="tv" class="content-section">
+            <h2>📺 Televisión Argentina En Vivo (Servidores HD):</h2>
+            
+            <div class="grid-container">
+                <article class="card tv-card">
+                    <span class="card-badge tv-b">EN VIVO</span>
+                    <h3>Telefe HD</h3>
+                    <a href="https://www.telefe.com" target="_blank" rel="noopener">🔴 TRANSMISION 1</a>
+                </article>
+
+                <article class="card tv-card">
+                    <span class="card-badge tv-b">DEPORTES</span>
+                    <h3>ESPN Premium HD</h3>
+                    <a href="https://www.espn.com.ar" target="_blank" rel="noopener">⚽ TRANSMISION 2</a>
+                </article>
+
+                <article class="card tv-card">
+                    <span class="card-badge tv-b">DEPORTES</span>
+                    <h3>TNT Sports Premium HD</h3>
+                    <a href="https://tntsports.com.ar" target="_blank" rel="noopener">⚽ TRANSMISION 3</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por <b>TodoTrucho</b></p>
+    </footer>
+</div>
+
+<!-- Modal de Suscripción Premium estilo Windows 95 -->
+<div id="premiumModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="win-titlebar">
+            <span>💎 ACTIVACION DE LICENCIA VIP PREMIUM</span>
+            <button id="closeModalBtn" class="close-btn">X</button>
+        </div>
+        <div class="win-body">
+            <h3>⚠️ ATENCION USUARIO ⚠️</h3>
+            <p id="premiumMsg">Si posee un código de activación oficial, ingréselo a continuación para desbloquear la máxima velocidad:</p>
+            
+            <div class="premium-input-container">
+                <input type="text" id="premiumCodeInput" placeholder="CODIGO DE ACTIVACION...">
+                <button id="claimCodeBtn">ACTIVAR</button>
+            </div>
+
+            <!-- CAPTCHA SIMULADO -->
+            <div id="captchaWidget" class="captcha-wrapper">
+                <div class="captcha-box-container" id="captchaBoxContainer">
+                    <div class="captcha-square" id="captchaSquare">
+                        <div class="spinner" id="captchaSpinner"></div>
+                        <span class="checkmark" id="captchaCheck">✓</span>
+                    </div>
+                    <span style="font-size: 0.85rem; font-weight: bold; color: #000;">No soy un robot</span>
+                </div>
+                <div class="captcha-logo">
+                    <strong>reCAPTCHA</strong><br>v1.0 Security
+                </div>
+            </div>
+
+            <div id="premiumFeedback"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
